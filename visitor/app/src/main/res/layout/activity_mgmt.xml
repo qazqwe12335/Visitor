@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    tools:context=".MGMTActivity">
+
+    <View
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_linearlayout"
+        android:layout_alignParentTop="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="10dp"
+                    android:layout_weight="1"
+                    android:text="@string/registration"
+                    android:textColor="#000000"
+                    android:textSize="28dp" />
+
+                <Button
+                    android:id="@+id/sign_out"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/previous_btn"
+                    android:onClick="mgmt_btn"
+                    android:text="@string/mgmt_signout"
+                    android:textAllCaps="false"
+                    android:textColor="#000000" />
+            </LinearLayout>
+
+            <include layout="@layout/table" />
+
+            <include
+                layout="@layout/mgmt_checkbox"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/L10" />
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+
+        android:id="@+id/btn_linearlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/upload_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/L5"
+            android:layout_weight="1"
+            android:background="@drawable/upload_btn"
+            android:onClick="mgmt_btn"
+            android:text="@string/upload"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/mgmt_inquire_btn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/L5"
+            android:layout_weight="1"
+            android:background="@drawable/upload_btn"
+            android:onClick="mgmt_btn"
+            android:text="@string/inquire"
+            android:textAllCaps="false"
+            android:textStyle="bold" />
+    </LinearLayout>
+</RelativeLayout>

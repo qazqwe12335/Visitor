@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <!--<TextView
+        android:id="@+id/mgmtusername"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/mgmt_username"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/mgmt_et_username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222222" />
+
+    <TextView
+        android:id="@+id/mgmtuserpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/mgmt_user_password"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/mgmt_et_user_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222222" />-->
+
+    <TextView
+        android:id="@+id/mgmtemail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/mgmt_email"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/mgmt_et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:inputType="textEmailAddress"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222222" />
+
+    <TextView
+        android:id="@+id/mgmtpassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/mgmt_password"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/mgmt_et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:inputType="textPassword"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222222" />
+
+    <TextView
+        android:id="@+id/mgmtname"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/mgmt_name"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/mgmt_et_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:maxLength="24"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222222" />
+
+    <TextView
+        android:id="@+id/mgmttype"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/mgmt_type"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <RadioGroup
+        android:id="@+id/position_radiog"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <RadioButton
+            android:id="@+id/mgmt_radio_visitor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/L5"
+            android:checked="true"
+            android:text="@string/mgmt_position_visitor" />
+
+        <RadioButton
+            android:id="@+id/mgmt_radio_work"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/L5"
+            android:text="@string/mgmt_position_work" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:visibility="visible"
+        android:id="@+id/company_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/mgmtcompany"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/mgmt_company"
+            android:textColor="#FF0000"
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/mgmt_et_company"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:background="@color/transparent"
+            android:maxLength="11"
+            android:maxLines="1"
+            android:padding="4dp"
+            android:textColor="#000000" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#222222" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/mgmtphone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="number"
+        android:text="@string/mgmt_phone"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/mgmt_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:inputType="number"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222222" />
+
+    <TextView
+        android:id="@+id/mgmtaccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/mgmt_account"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/mgmt_et_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222222" />
+
+    <TextView
+        android:id="@+id/mgmtcardid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:inputType="text"
+        android:text="@string/mgmt_cardid"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/mgmt_et_cardid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:inputType="text"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:padding="4dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222222" />
+
+    <TextView
+        android:id="@+id/mgmtdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/mgmt_date"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/mgmt_et_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:maxLength="11"
+        android:maxLines="1"
+        android:onClick="mgmt_btn"
+        android:padding="4dp"
+        android:textColor="#000000" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222222" />
+
+    <TextView
+        android:id="@+id/mgmtpic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/mgmt_pic"
+        android:textColor="#FF0000"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/table_ing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:adjustViewBounds="true"
+        android:maxHeight="200dp"
+        android:scaleType="fitCenter" />
+
+    <EditText
+        android:id="@+id/mgmt_et_pic"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:background="@color/transparent"
+        android:enabled="false"
+        android:padding="4dp"
+        android:textColor="#000000"
+        android:textSize="12sp" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#222222" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:gravity="left"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            android:layout_weight="1"
+            android:text="@string/required"
+            android:textColor="#FF0000" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/pic_add_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/pic_btn"
+            android:elevation="5dp"
+            android:onClick="mgmt_btn"
+            android:src="@drawable/ic_add_black_24dp" />
+
+        <androidx.appcompat.widget.AppCompatImageButton
+            android:id="@+id/pic_camera_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="12dp"
+            android:background="@drawable/pic_btn"
+            android:elevation="5dp"
+            android:onClick="mgmt_btn"
+            android:src="@drawable/ic_camera_alt_black_24dp" />
+    </LinearLayout>
+</LinearLayout>

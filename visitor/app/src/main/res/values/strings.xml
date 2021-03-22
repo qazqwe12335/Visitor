@@ -1,0 +1,38 @@
+<resources>
+    <string name="app_name">visitor</string>
+    <string name="title"></string>
+    <string name="login">Log In</string>
+    <string name="login_user">Username</string>
+    <string name="login_userpassword">Password</string>
+    <string name="login_remember">Remeeber me</string>
+    <string name="registration">Registration</string>
+
+    <string name="mgmt_date">Date ＊</string>
+    <string name="mgmt_signout">Sign Out</string>
+
+    <string name="mgmt_account">Account</string>
+    <string name="mgmt_username">Username</string>
+    <string name="mgmt_user_password">User Password</string>
+    <string name="mgmt_email">Email</string>
+    <string name="mgmt_password">Password</string>
+    <string name="mgmt_type">Position</string>
+
+    <string name="mgmt_position_visitor">訪 客</string>
+    <string name="mgmt_position_work">職 員</string>
+
+    <string name="mgmt_name">Name ＊</string>
+    <string name="mgmt_phone">Phone</string>
+    <string name="mgmt_company">Company ＊</string>
+    <string name="mgmt_cardid">Card_Id</string>
+    <string name="mgmt_pic">Picture</string>
+    <string name="upload">Upload</string>
+    <string name="required">Required fields are indicated with ＊</string>
+    <string name="inquire">Inquire</string>
+    <string name="modify">修改</string>
+    <string name="delete">刪除</string>
+
+    <string name="run">Update</string>
+
+    <string name="infor">Information</string>
+    <string name="update">Update</string>
+</resources>
